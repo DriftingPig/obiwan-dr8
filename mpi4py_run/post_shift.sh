@@ -84,7 +84,7 @@ echo -e "\nStarting on $(hostname)\n" >> $log
 echo "-----------------------------------------------------------------------------------------" >> $log
 
 export dataset=dr8
-threads=32
+threads=2
 #echo /global/cscratch1/sd/huikong/obiwan_Aug/repos_for_docker/obiwan_data/DR3_copies/legacysurveydir_dr3_copy${2}${1}
 python /global/cscratch1/sd/huikong/obiwan_Aug/repos_for_docker/obiwan_code/dr8/kenobi2.py --dataset ${dataset} -b $1 \
 --nobj ${nobj} --rowstart ${rowstart} -o ${object} \
